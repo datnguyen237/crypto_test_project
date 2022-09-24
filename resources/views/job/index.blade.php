@@ -36,7 +36,7 @@
                                 <tr class="col-12">
                                     <td class="col-3">{{ $job->title }}</td>
                                     <td class="col-3">{{ $job->description }}</td>
-                                    <td class="col-4"><img class="w-15" src=" {{ url('storage/images/'.$job->logo) }}" alt="Logo"></td>
+                                    <td class="col-4"><img class="w-15" src="{{ url('storage/images/'.$job->logo) }}" alt="Logo"></td>
                                     <td class="col-2">{{ date('Y-m-d H:i:s', strtotime($job->created_at)) }}</td>
                                 </tr>
                             @empty
